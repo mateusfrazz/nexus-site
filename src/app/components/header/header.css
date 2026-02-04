@@ -1,0 +1,11 @@
+.navbar{
+    height: 7.5rem;
+    border: 2px solid rgba(20, 20, 20, 0.619);
+    font-size: 20px;
+    background-color: var(--bg-dark) !important;
+
+}
+
+.containerNav{
+     margin-right: 1.25rem;
+}
