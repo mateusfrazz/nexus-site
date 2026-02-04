@@ -1,11 +1,71 @@
-.navbar{
-    height: 7.5rem;
-    border: 2px solid rgba(20, 20, 20, 0.619);
-    font-size: 20px;
-    background-color: var(--bg-dark) !important;
-
+.navbar {
+    height: auto;
+    min-height: 5rem;
+    background-color: rgba(10, 10, 10, 0.9) !important; /* Fundo escuro levemente transparente */
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 0;
 }
 
-.containerNav{
-     margin-right: 1.25rem;
+.imgLogo {
+    width: auto;
+    height: 3.5rem; /* Ajustado para não ocupar altura excessiva */
+}
+
+/* Estilo dos Links */
+.nav-link {
+    color: #b3b3b3 !important;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .active-link {
+    color: #ffffff !important;
+}
+
+/* Linha indicadora (estilo o 'Início' da imagem) */
+.active-link::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    bottom: -5px;
+    left: 20%;
+    background-color: #a020f0; /* Roxo da marca */
+    box-shadow: 0 0 10px #a020f0;
+}
+
+/* Botão Falar com Especialista */
+.btn-especialista {
+    background: linear-gradient(90deg, #8a2be2, #a020f0);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(160, 32, 240, 0.4);
+}
+
+.btn-especialista:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(160, 32, 240, 0.7);
+    filter: brightness(1.2);
+}
+
+/* Ajustes para Mobile */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: #0a0a0a;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
 }
