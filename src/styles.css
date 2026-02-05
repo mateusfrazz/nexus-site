@@ -13,3 +13,13 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-white);
 }
+/* Oculta para Chrome, Safari e Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Oculta para Firefox e Edge */
+body {
+  -ms-overflow-style: none;  /* IE e Edge */
+  scrollbar-width: none;  /* Firefox */
+}
